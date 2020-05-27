@@ -1,0 +1,134 @@
+* {
+  -webkit-text-smoothing: antialiased;
+}
+body {
+  font-family: "Caveat";
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 200px;
+  background-image: url(/images/1.jpg);
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.clear {
+  font-size: 25px;
+  color: white;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.clear i:hover {
+  cursor: pointer;
+  color: black;
+  transform: rotate(45deg);
+  text-shadow: 1px 3px 5px black;
+}
+#date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: "Pacifico";
+  color: antiquewhite;
+  font-size: 25px;
+}
+/* content */
+.content {
+  width: 100%;
+  height: 360px;
+  background-color: blanchedalmond;
+  overflow: auto;
+}
+.content ul {
+  padding: 0px;
+  margin: 0px;
+}
+.item {
+  height: 45px;
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+}
+.item i.co {
+  position: absolute;
+  font-size: 25px;
+  left: 15px;
+  top: 10px;
+  padding-left: 10px;
+}
+.item i.co:hover {
+  cursor: pointer;
+}
+.fa-check-circle {
+  color: greenyellow;
+}
+.item p.text {
+  position: absolute;
+  font-size: 25px;
+  left: 50px;
+  top: 5px;
+  padding-left: 5px;
+}
+.line-through {
+  text-decoration: line-through;
+  color: grey;
+}
+.item i.de {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 25px;
+}
+.item i.de:hover {
+  cursor: pointer;
+  color: red;
+}
+/* todo */
+.add-to-do {
+  position: relative;
+  color: #4162f6;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: blanchedalmond;
+}
+.add-to-do i {
+  position: absolute;
+  bottom: 5px;
+  font-size: 30px;
+  color: #4162f6;
+}
+.add-to-do input {
+  position: absolute;
+  left: 50px;
+  bottom: 3px;
+  color: black;
+  height: 35px;
+  width: 310px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+  outline: none;
+}
+.add-to-do input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #4162f6;
+}
